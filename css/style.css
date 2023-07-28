@@ -31,10 +31,14 @@ img {
 
 #container {
     margin: 0 auto;
-    max-width: 750px;
+    /* max-width: 750px; */
     overflow: hidden;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main {
@@ -259,6 +263,7 @@ img {
     background: #000000c7;;
     z-index: 9;
 	/* zoom:.9; */
+    margin: 0 auto;
 }
 
 .newsBox{
@@ -269,19 +274,19 @@ img {
 }
 
 .newsbg{
-    width: 10%;
+    /* width: 10%; */
     color: #ffeaa7;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
 }
 
-.newsbg p{
+.newsbg span{
     padding-left: 5px;
 }
 
 .bd{
-    width: 90%;
+    /* width: 90%; */
     color: #999;
 	padding-left: 5px;
     display: flex;
