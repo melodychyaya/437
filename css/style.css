@@ -11,6 +11,10 @@ body {
     height: 100%;
 }
 
+li {
+    list-style: none;
+}
+
 #container {
     margin: 0 auto;
     max-width: 750px;
@@ -79,6 +83,8 @@ img {
     /* transform-origin: 50% -1%; */
     gap: 1vh;
     margin: 0 auto 2.5vh;
+    padding: 0;
+    list-style: none;
 }
 
 .main .navi>li {
@@ -128,7 +134,7 @@ img {
 .main .navi>li .jsBox li {
     margin-bottom: 1rem;
     overflow: hidden;
-    zoom: 1;
+    /* zoom: 1; */
     display: flex;
     align-items: center;
     gap: 6px;
@@ -244,8 +250,9 @@ img {
 	line-height: .5;
     position: relative;
     z-index: 9;
-	zoom:.9;
+	/* zoom:.9; */
     height: 4.5vh;
+    font-size: 12px;
 }
 
 .newSection .newsBox {
@@ -255,10 +262,19 @@ img {
     overflow: hidden;
 }
 
+.newSection .newsBox dl{
+    margin: 0;
+}
+
+.infoList{
+    margin: 0;
+    height: 100%;
+}
+
 .newSection dt {
     float: left;
     color: #ffeaa7;
-    font-size: 14px;
+    /* font-size: 14px; */
     line-height: 42px;
 }
 
@@ -279,11 +295,13 @@ img {
     height: 40px;
     line-height: 40px;
     overflow: hidden;
-    font-size: 14px;
+    /* font-size: 14px; */
     color: #999;
 	padding-left: 10px;
     text-overflow: ellipsis;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
 .newSection .hd {
@@ -317,7 +335,7 @@ img {
 }
 
 .infoList li p {
-  position: absolute;
+  /* position: absolute; */
   animation-name: run;
   animation: 30s linear 0s infinite run;
 }
